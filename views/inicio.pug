@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                P Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste inventore, voluptas cum optio laborum est atque voluptatum nulla. Quod architecto fugiat ipsam ut distinctio beatae, repudiandae omnis ea veritatis ullam!lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non eius possimus enim deleniti et tempora veniam obcaecati fugiat minima culpa omnis blanditiis, nisi aliquam vel inventore corrupti earum dolorum. 
+                P Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deserunt modi molestias fuga aliquid ipsum eum nam sint doloribus ex quas odit, rerum blanditiis dolorum maiores error nulla nostrum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi in, tempore cumque doloremque beatae, deleniti repellendus deserunt neque libero itaque dolor 
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de descuento 
+                        p.titulo Viaje a canada 
+                        p.fecha 20 de marzo de 2024 - 28 de marzo de 2024
+                        p.precio $2,500 USD
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
+            
